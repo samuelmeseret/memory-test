@@ -80,27 +80,29 @@ export default function AddFamilyMemberPage() {
 
   if (step === "name") {
     return (
-      <div>
+      <div className="mx-auto max-w-lg space-y-8">
         <BackButton />
-        <h1 className="text-3xl font-bold text-gray-900">
-          Add a Family Member
-        </h1>
-        <p className="mt-2 text-xl text-gray-600">
-          What is their name?
-        </p>
-        <form onSubmit={handleNameSubmit} className="mt-6">
+        <div>
+          <h1 className="text-4xl font-extrabold tracking-tight text-slate-900">
+            Add a Family Member
+          </h1>
+          <p className="mt-3 text-xl leading-relaxed text-slate-600">
+            What is their name?
+          </p>
+        </div>
+        <form onSubmit={handleNameSubmit} className="mt-8 space-y-6">
           <input
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Enter their name"
-            className="h-16 w-full rounded-2xl border-2 border-gray-200 px-5 text-xl text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:outline-none"
+            className="h-20 w-full rounded-3xl border-0 bg-white px-6 text-2xl font-medium text-slate-900 shadow-sm ring-1 ring-inset ring-slate-200 placeholder:text-slate-400 focus:ring-4 focus:ring-inset focus:ring-indigo-600 sm:leading-6"
             autoFocus
             required
           />
           <button
             type="submit"
-            className="mt-4 h-16 w-full rounded-2xl bg-blue-700 text-xl font-semibold text-white transition-colors hover:bg-blue-800 active:scale-[0.98]"
+            className="flex h-20 w-full items-center justify-center rounded-3xl bg-indigo-600 text-2xl font-bold text-white shadow-lg shadow-indigo-900/20 transition-all hover:-translate-y-1 hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-indigo-300 active:scale-[0.98]"
           >
             Next
           </button>
@@ -111,8 +113,9 @@ export default function AddFamilyMemberPage() {
 
   if (step === "saving") {
     return (
-      <div className="flex min-h-[50vh] items-center justify-center">
-        <p className="text-2xl text-gray-600" aria-live="polite">
+      <div className="flex min-h-[50vh] flex-col items-center justify-center space-y-6">
+        <div className="h-16 w-16 animate-spin rounded-full border-4 border-slate-200 border-t-indigo-600"></div>
+        <p className="text-2xl font-medium text-slate-600" aria-live="polite">
           Saving {name}...
         </p>
       </div>
@@ -120,28 +123,32 @@ export default function AddFamilyMemberPage() {
   }
 
   return (
-    <div>
+    <div className="mx-auto max-w-lg space-y-8">
       <BackButton />
-      <h1 className="text-3xl font-bold text-gray-900">
-        Photos of {name}
-      </h1>
-      <p className="mt-2 text-xl text-gray-600">
-        Add one or more photos. More photos means better matching.
-      </p>
+      <div>
+        <h1 className="text-4xl font-extrabold tracking-tight text-slate-900">
+          Photos of {name}
+        </h1>
+        <p className="mt-3 text-xl leading-relaxed text-slate-600">
+          Add one or more photos. More photos means better matching.
+        </p>
+      </div>
 
       {/* Photo previews */}
       {photos.length > 0 && (
-        <div className="mt-6 grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
           {photos.map((photo, index) => (
-            <div key={index} className="relative">
-              <img
-                src={photo.preview}
-                alt={`Photo ${index + 1} of ${name}`}
-                className="h-28 w-full rounded-xl object-cover"
-              />
+            <div key={index} className="group relative">
+              <div className="overflow-hidden rounded-2xl ring-1 ring-slate-200/60">
+                <img
+                  src={photo.preview}
+                  alt={`Photo ${index + 1} of ${name}`}
+                  className="h-32 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
               <button
                 onClick={() => handleRemovePhoto(index)}
-                className="absolute -right-2 -top-2 flex h-8 w-8 items-center justify-center rounded-full bg-red-500 text-white shadow"
+                className="absolute -right-3 -top-3 flex h-10 w-10 items-center justify-center rounded-full bg-red-500 text-white shadow-lg transition-transform hover:scale-110 hover:bg-red-600 focus:outline-none focus:ring-4 focus:ring-red-300"
                 aria-label={`Remove photo ${index + 1}`}
               >
                 &times;
@@ -151,20 +158,22 @@ export default function AddFamilyMemberPage() {
         </div>
       )}
 
-      <div className="mt-6">
+      <div className="mt-8 rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200/60 sm:p-8">
         <Camera onCapture={handleCapture} label="Take a Photo" />
       </div>
 
       {error && (
-        <p className="mt-4 text-center text-lg text-red-600" role="alert">
-          {error}
-        </p>
+        <div className="rounded-2xl bg-red-50 p-4 ring-1 ring-red-200">
+          <p className="text-center text-lg font-medium text-red-800" role="alert">
+            {error}
+          </p>
+        </div>
       )}
 
       <button
         onClick={handleSave}
         disabled={photos.length === 0}
-        className="mt-6 h-16 w-full rounded-2xl bg-green-700 text-xl font-semibold text-white transition-colors hover:bg-green-800 disabled:bg-gray-300 disabled:text-gray-500"
+        className="mt-8 flex h-20 w-full items-center justify-center rounded-3xl bg-emerald-600 text-2xl font-bold text-white shadow-lg shadow-emerald-900/20 transition-all hover:-translate-y-1 hover:bg-emerald-700 focus:outline-none focus:ring-4 focus:ring-emerald-300 disabled:pointer-events-none disabled:bg-slate-200 disabled:text-slate-400 disabled:shadow-none active:scale-[0.98]"
       >
         Save {name}
       </button>
