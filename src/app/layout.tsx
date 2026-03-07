@@ -3,12 +3,12 @@ import "./globals.css";
 import SWRegister from "@/components/SWRegister";
 
 export const metadata: Metadata = {
-  title: "Memory Helper",
+  title: "Memory Lane",
   description: "Never forget a familiar face",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Memory Helper",
+    title: "Memory Lane",
   },
   formatDetection: {
     telephone: false,

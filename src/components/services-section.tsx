@@ -129,7 +129,7 @@ export function ServicesSection() {
               </h2>
               <div className="space-y-6 text-white/90 leading-relaxed">
                 <p>
-                  At Memory Helper, we believe remembering your loved ones should be effortless. Our platform uses advanced AI to instantly recognize faces.
+                  At Memory Lane, we believe remembering your loved ones should be effortless. Our platform uses advanced AI to instantly recognize faces.
                 </p>
                 <p>
                   Every photo is encrypted, every memory secured. We've built a tool to help you stay connected with your family and friends.

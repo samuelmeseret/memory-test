@@ -38,7 +38,7 @@ export function Footer() {
 
       <div className="absolute -top-[15vw] left-0 right-0 flex items-end justify-center overflow-visible pointer-events-none z-10">
         <h2 className="font-bold text-center text-[18vw] sm:text-[16vw] md:text-[14vw] lg:text-[12vw] leading-[0.85] tracking-tighter text-white whitespace-nowrap">
-          MEMORY HELPER
+          MEMORY LANE
         </h2>
       </div>
 
@@ -57,7 +57,7 @@ export function Footer() {
                   <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                   <polyline points="9 22 9 12 15 12 15 22" />
                 </svg>
-                <span className="text-base font-medium text-foreground">Memory Helper</span>
+                <span className="text-base font-medium text-foreground">Memory Lane</span>
               </Link>
               <p className="text-sm text-muted-foreground mb-6">Remember your loved ones, simplified.</p>
               <div className="flex gap-4">
@@ -154,8 +154,8 @@ export function Footer() {
           </div>
 
           <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-xs text-muted-foreground">© 2026 Memory Helper. All rights reserved.</p>
-            <p className="text-xs text-muted-foreground">Memory Helper Inc. - Facial Recognition App</p>
+            <p className="text-xs text-muted-foreground">© 2026 Memory Lane. All rights reserved.</p>
+            <p className="text-xs text-muted-foreground">Memory Lane Inc. - Facial Recognition App</p>
           </div>
         </div>
       </footer>

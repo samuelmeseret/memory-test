@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Memory Helper",
-    short_name: "Memory Helper",
+    name: "Memory Lane",
+    short_name: "Memory Lane",
     description: "Never forget a familiar face",
     start_url: "/dashboard",
     display: "standalone",

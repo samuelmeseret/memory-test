@@ -2,14 +2,14 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqs = [
   {
-    question: "How do I create a profile on Memory Helper?",
+    question: "How do I create a profile on Memory Lane?",
     answer:
       "It's very simple! Create an account, click 'Add Profile', upload photos of your loved one, and enter their details. The face recognition will start working immediately.",
   },
   {
-    question: "Is Memory Helper free to use?",
+    question: "Is Memory Lane free to use?",
     answer:
-      "Memory Helper is free for basic use. The Pro plan at $9/month allows for unlimited profiles and advanced recognition history.",
+      "Memory Lane is free for basic use. The Pro plan at $9/month allows for unlimited profiles and advanced recognition history.",
   },
   {
     question: "Is my data private and secure?",
@@ -40,7 +40,7 @@ export function FAQSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-normal mb-6 text-balance font-serif">Frequently asked questions</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Everything you need to know about Memory Helper. Have a question not listed? Contact our support.
+            Everything you need to know about Memory Lane. Have a question not listed? Contact our support.
           </p>
         </div>
 

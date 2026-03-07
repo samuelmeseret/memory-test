@@ -27,7 +27,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-md">
       <nav className="mx-auto flex max-w-2xl items-center justify-between px-6 py-4">
         <a href="/dashboard" className="text-2xl font-extrabold tracking-tight text-indigo-700 transition-colors hover:text-indigo-800">
-          Memory Helper
+          Memory Lane
         </a>
         <div className="flex items-center gap-4">
           {name && (

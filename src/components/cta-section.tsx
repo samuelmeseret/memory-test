@@ -17,7 +17,7 @@ export function CTASection() {
             Ready to remember your loved ones?
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-10">
-            Join thousands of users who trust Memory Helper to keep their families close.
+            Join thousands of users who trust Memory Lane to keep their families close.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

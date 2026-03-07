@@ -46,7 +46,7 @@ export function HeroSection() {
             <rect x="6" y="60" width="348" height="64" fill="#ffffff" />
             <line x1="6" y1="124" x2="354" y2="124" stroke="#e5e7eb" strokeWidth="1" />
             
-            <text x="24" y="100" fontFamily="system-ui, -apple-system, sans-serif" fontSize="20" fontWeight="700" fill="#1e40af">Memory Helper</text>
+            <text x="24" y="100" fontFamily="system-ui, -apple-system, sans-serif" fontSize="20" fontWeight="700" fill="#1e40af">Memory Lane</text>
             
             <rect x="260" y="74" width="76" height="36" rx="12" fill="#f3f4f6" />
             <text x="298" y="97" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fontWeight="500" fill="#374151" textAnchor="middle">Sign Out</text>
