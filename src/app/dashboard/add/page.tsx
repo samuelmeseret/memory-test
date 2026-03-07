@@ -152,7 +152,7 @@ export default function AddFamilyMemberPage() {
       )}
 
       <div className="mt-6">
-        <Camera onCapture={handleCapture} label="Add a Photo" />
+        <Camera onCapture={handleCapture} label="Take a Photo" />
       </div>
 
       {error && (
