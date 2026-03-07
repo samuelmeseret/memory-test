@@ -24,20 +24,20 @@ export default function Navbar() {
   };
 
   return (
-    <header className="border-b border-gray-200 bg-white">
-      <nav className="mx-auto flex max-w-2xl items-center justify-between px-4 py-4">
-        <a href="/dashboard" className="text-xl font-bold text-blue-800">
+    <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-md">
+      <nav className="mx-auto flex max-w-2xl items-center justify-between px-6 py-4">
+        <a href="/dashboard" className="text-2xl font-extrabold tracking-tight text-indigo-700 transition-colors hover:text-indigo-800">
           Memory Helper
         </a>
         <div className="flex items-center gap-4">
           {name && (
-            <span className="hidden text-lg text-gray-600 sm:inline">
+            <span className="hidden text-lg font-medium text-slate-600 sm:inline">
               Hi, {name.split(" ")[0]}
             </span>
           )}
           <button
             onClick={handleSignOut}
-            className="rounded-xl bg-gray-100 px-4 py-2 text-lg font-medium text-gray-700 transition-colors hover:bg-gray-200"
+            className="rounded-full bg-slate-100 px-5 py-2.5 text-lg font-semibold text-slate-700 transition-all hover:bg-slate-200 active:scale-[0.98]"
           >
             Sign Out
           </button>

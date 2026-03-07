@@ -14,16 +14,21 @@ export default function LoginForm() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-8">
+    <div className="flex flex-col items-center gap-10 rounded-3xl bg-white px-8 py-12 shadow-xl shadow-slate-200/50 ring-1 ring-slate-200/60 sm:px-12">
       <div className="text-center">
-        <h1 className="text-3xl font-bold text-gray-900">Welcome Back</h1>
-        <p className="mt-3 text-xl text-gray-600">
-          Sign in to access your family photos
+        <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-indigo-100 text-indigo-600 shadow-inner">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
+        </div>
+        <h1 className="text-3xl font-extrabold tracking-tight text-slate-900">Welcome Back</h1>
+        <p className="mt-3 text-lg text-slate-600">
+          Sign in to securely access your family photos.
         </p>
       </div>
       <button
         onClick={handleSignIn}
-        className="flex h-16 w-full max-w-sm items-center justify-center gap-3 rounded-2xl bg-white px-6 text-xl font-semibold text-gray-700 shadow-md ring-1 ring-gray-200 transition-all hover:shadow-lg active:scale-[0.98]"
+        className="flex h-16 w-full items-center justify-center gap-4 rounded-2xl bg-white px-6 text-xl font-bold text-slate-700 shadow-sm ring-1 ring-slate-200 transition-all hover:bg-slate-50 hover:shadow-md focus:outline-none focus:ring-4 focus:ring-slate-100 active:scale-[0.98]"
       >
         <svg className="h-6 w-6" viewBox="0 0 24 24">
           <path

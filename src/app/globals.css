@@ -2,7 +2,7 @@
 
 :root {
   --background: #f8fafc;
-  --foreground: #1e293b;
+  --foreground: #0f172a;
 }
 
 @theme inline {
@@ -16,4 +16,6 @@ body {
   font-family: system-ui, -apple-system, sans-serif;
   font-size: 20px;
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
