@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import SWRegister from "@/components/SWRegister";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Memory Lane",
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body className="bg-background text-foreground antialiased selection:bg-amber-100 selection:text-amber-900">
         {children}
         <SWRegister />
+        <Analytics />
       </body>
     </html>
   );
