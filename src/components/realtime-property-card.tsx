@@ -95,8 +95,8 @@ export function RealtimePropertyCard() {
         <div className="flex items-center gap-3">
           <h3 className="text-lg font-semibold text-slate-900">Recent Recognitions</h3>
           <span className="relative flex h-3 w-3">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-            <span className="relative inline-flex h-3 w-3 rounded-full bg-emerald-500" />
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-amber-400 opacity-75" />
+            <span className="relative inline-flex h-3 w-3 rounded-full bg-amber-500" />
           </span>
         </div>
         <span className="text-sm text-slate-500">Live</span>
@@ -104,7 +104,7 @@ export function RealtimePropertyCard() {
 
       <div className="mb-6 grid grid-cols-2 gap-4">
         <motion.div
-          className="rounded-xl bg-gradient-to-br from-blue-100 to-blue-200 p-4 text-black"
+          className="rounded-xl bg-gradient-to-br from-amber-100 to-amber-200 p-4 text-black"
           whileHover={{ scale: 1.02 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
@@ -125,7 +125,7 @@ export function RealtimePropertyCard() {
           </AnimatePresence>
         </motion.div>
         <motion.div
-          className="rounded-xl bg-gradient-to-br from-violet-100 to-purple-200 p-4 text-black"
+          className="rounded-xl bg-gradient-to-br from-teal-100 to-teal-200 p-4 text-black"
           whileHover={{ scale: 1.02 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
@@ -170,7 +170,7 @@ export function RealtimePropertyCard() {
                 {hourlyData.map((entry, index) => (
                   <Cell
                     key={`cell-${index}`}
-                    fill={index === highlightedBar ? "#3b82f6" : entry.visitors === maxVisitors ? "#60a5fa" : "#e2e8f0"}
+                    fill={index === highlightedBar ? "#b45309" : entry.visitors === maxVisitors ? "#d97706" : "#fde68a"}
                   />
                 ))}
               </Bar>

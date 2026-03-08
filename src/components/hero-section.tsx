@@ -12,7 +12,7 @@ export function HeroSection() {
             <>
               <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[6.5rem] font-normal leading-tight mb-4 w-full px-4 max-w-6xl mx-auto text-balance text-foreground">
                 Never forget a <br />
-                <span className="font-bold mt-1 leading-none text-indigo-600 dark:text-indigo-400">
+                <span className="font-bold mt-1 leading-none text-amber-700 dark:text-amber-500">
                   <AnimatedText text="familiar face again." delay={0.3} />
                 </span>
               </h1>
@@ -29,13 +29,13 @@ export function HeroSection() {
               </filter>
               
               <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#1d4ed8"/>
-                <stop offset="100%" stopColor="#1e40af"/>
+                <stop offset="0%" stopColor="#b45309"/>
+                <stop offset="100%" stopColor="#92400e"/>
               </linearGradient>
-              
+
               <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#15803d"/>
-                <stop offset="100%" stopColor="#166534"/>
+                <stop offset="0%" stopColor="#0f766e"/>
+                <stop offset="100%" stopColor="#115e59"/>
               </linearGradient>
             </defs>
 
@@ -46,7 +46,7 @@ export function HeroSection() {
             <rect x="6" y="60" width="348" height="64" fill="#ffffff" />
             <line x1="6" y1="124" x2="354" y2="124" stroke="#e5e7eb" strokeWidth="1" />
             
-            <text x="24" y="100" fontFamily="system-ui, -apple-system, sans-serif" fontSize="20" fontWeight="700" fill="#1e40af">Memory Lane</text>
+            <text x="24" y="100" fontFamily="system-ui, -apple-system, sans-serif" fontSize="20" fontWeight="700" fill="#92400e">Memory Lane</text>
             
             <rect x="260" y="74" width="76" height="36" rx="12" fill="#f3f4f6" />
             <text x="298" y="97" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fontWeight="500" fill="#374151" textAnchor="middle">Sign Out</text>

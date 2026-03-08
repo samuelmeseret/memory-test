@@ -15,14 +15,14 @@ const features = [
 ]
 
 const allTransactions = [
-  { name: "John Doe", amount: "+24", category: "Profile matched", color: "from-emerald-400 to-teal-500" },
-  { name: "Jane Smith", amount: "+18", category: "Profile matched", color: "from-blue-400 to-indigo-500" },
-  { name: "Robert Johnson", amount: "+12", category: "Profile matched", color: "from-amber-400 to-orange-500" },
-  { name: "Emily Davis", amount: "+35", category: "Profile matched", color: "from-rose-400 to-pink-500" },
-  { name: "Michael Wilson", amount: "+7", category: "Profile matched", color: "from-violet-400 to-purple-500" },
-  { name: "Sarah Brown", amount: "+11", category: "Profile matched", color: "from-cyan-400 to-blue-500" },
-  { name: "David Miller", amount: "+28", category: "Profile matched", color: "from-lime-400 to-green-500" },
-  { name: "Lisa Taylor", amount: "+9", category: "Profile matched", color: "from-fuchsia-400 to-pink-500" },
+  { name: "John Doe", amount: "+24", category: "Profile matched", color: "from-amber-400 to-amber-600" },
+  { name: "Jane Smith", amount: "+18", category: "Profile matched", color: "from-teal-400 to-teal-600" },
+  { name: "Robert Johnson", amount: "+12", category: "Profile matched", color: "from-orange-400 to-orange-600" },
+  { name: "Emily Davis", amount: "+35", category: "Profile matched", color: "from-rose-400 to-rose-600" },
+  { name: "Michael Wilson", amount: "+7", category: "Profile matched", color: "from-stone-400 to-stone-600" },
+  { name: "Sarah Brown", amount: "+11", category: "Profile matched", color: "from-teal-300 to-teal-500" },
+  { name: "David Miller", amount: "+28", category: "Profile matched", color: "from-yellow-400 to-amber-500" },
+  { name: "Lisa Taylor", amount: "+9", category: "Profile matched", color: "from-amber-300 to-orange-500" },
 ]
 
 export function FeaturesSection() {
@@ -74,7 +74,7 @@ export function FeaturesSection() {
   return (
     <section id="features" className="py-32 px-6 relative overflow-hidden">
       <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 flex justify-center pointer-events-none z-0">
-        <span className="font-bold text-center text-[20vw] sm:text-[18vw] md:text-[16vw] lg:text-[14vw] leading-none tracking-tighter text-zinc-100 whitespace-nowrap">
+        <span className="font-bold text-center text-[20vw] sm:text-[18vw] md:text-[16vw] lg:text-[14vw] leading-none tracking-tighter text-amber-50 whitespace-nowrap">
           REMEMBER
         </span>
       </div>
@@ -109,9 +109,9 @@ export function FeaturesSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="flex items-center p-3 rounded-xl hover:bg-zinc-50 transition-colors duration-300 gap-2 py-1"
+                  className="flex items-center p-3 rounded-xl hover:bg-amber-50/50 transition-colors duration-300 gap-2 py-1"
                 >
-                  <div className="w-6 h-6 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
+                  <div className="w-6 h-6 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
                     <Check className="w-3.5 h-3.5 text-white" strokeWidth={2.5} />
                   </div>
                   <span className="text-sm text-foreground">{feature}</span>

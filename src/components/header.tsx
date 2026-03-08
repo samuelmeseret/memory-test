@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import type React from "react"
 import { useState } from "react"
 import { Menu, X, ArrowUpRight, ArrowRight } from "lucide-react"
@@ -39,24 +40,15 @@ export function Header() {
       <div
         className={`max-w-7xl mx-auto transition-all duration-300 rounded-2xl ${
           isScrolled
-            ? "bg-white/70 backdrop-blur-xl border border-zinc-200 px-6 py-3"
+            ? "bg-amber-50/70 backdrop-blur-xl border border-amber-200/50 px-6 py-3"
             : "bg-background/90 backdrop-blur-md px-6 py-5"
         }`}
       >
         <div className="flex items-center justify-between">
           <a href="#" onClick={handleLogoClick} className="flex items-center gap-2 cursor-pointer">
-            <svg
-              className={`w-6 h-6 transition-colors duration-300 ${isScrolled ? "text-black" : "text-foreground"}`}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-              <polyline points="9 22 9 12 15 12 15 22" />
-            </svg>
+            <Image src="/Logo.ico" alt="Memory Lane" width={28} height={28} className="transition-opacity duration-300" />
             <span
-              className={`text-lg font-medium tracking-tight transition-colors duration-300 ${isScrolled ? "text-black" : "text-foreground"}`}
+              className={`text-lg font-medium tracking-tight transition-colors duration-300 ${isScrolled ? "text-stone-900" : "text-foreground"}`}
             >
               Memory Lane
             </span>
@@ -67,7 +59,7 @@ export function Header() {
               href="#how-it-works"
               onClick={(e) => handleSmoothScroll(e, "how-it-works")}
               className={`text-sm transition-colors cursor-pointer ${
-                isScrolled ? "text-zinc-600 hover:text-black" : "text-muted-foreground hover:text-foreground"
+                isScrolled ? "text-stone-600 hover:text-stone-900" : "text-muted-foreground hover:text-foreground"
               }`}
             >
               Mission
@@ -76,7 +68,7 @@ export function Header() {
               href="#features"
               onClick={(e) => handleSmoothScroll(e, "features")}
               className={`text-sm transition-colors cursor-pointer ${
-                isScrolled ? "text-zinc-600 hover:text-black" : "text-muted-foreground hover:text-foreground"
+                isScrolled ? "text-stone-600 hover:text-stone-900" : "text-muted-foreground hover:text-foreground"
               }`}
             >
               Features
@@ -85,7 +77,7 @@ export function Header() {
               href="#pricing"
               onClick={(e) => handleSmoothScroll(e, "pricing")}
               className={`text-sm transition-colors cursor-pointer ${
-                isScrolled ? "text-zinc-600 hover:text-black" : "text-muted-foreground hover:text-foreground"
+                isScrolled ? "text-stone-600 hover:text-stone-900" : "text-muted-foreground hover:text-foreground"
               }`}
             >
               Profiles
@@ -94,7 +86,7 @@ export function Header() {
               href="#testimonials"
               onClick={(e) => handleSmoothScroll(e, "testimonials")}
               className={`text-sm transition-colors cursor-pointer ${
-                isScrolled ? "text-zinc-600 hover:text-black" : "text-muted-foreground hover:text-foreground"
+                isScrolled ? "text-stone-600 hover:text-stone-900" : "text-muted-foreground hover:text-foreground"
               }`}
             >
               Stories
@@ -103,7 +95,7 @@ export function Header() {
               href="#faq"
               onClick={(e) => handleSmoothScroll(e, "faq")}
               className={`text-sm transition-colors cursor-pointer ${
-                isScrolled ? "text-zinc-600 hover:text-black" : "text-muted-foreground hover:text-foreground"
+                isScrolled ? "text-stone-600 hover:text-stone-900" : "text-muted-foreground hover:text-foreground"
               }`}
             >
               FAQ
@@ -114,17 +106,17 @@ export function Header() {
             <Link
               href="/login"
               className={`relative flex items-center gap-0 border rounded-full pl-5 pr-1 py-1 transition-all duration-300 group overflow-hidden ${
-                isScrolled ? "border-zinc-300" : "border-border"
+                isScrolled ? "border-stone-300" : "border-border"
               }`}
             >
               <span
                 className={`absolute inset-0 rounded-full scale-x-0 origin-right group-hover:scale-x-100 transition-transform duration-300 ${
-                  isScrolled ? "bg-black" : "bg-foreground"
+                  isScrolled ? "bg-stone-900" : "bg-foreground"
                 }`}
               />
               <span
                 className={`text-sm pr-3 relative z-10 transition-colors duration-300 ${
-                  isScrolled ? "text-black group-hover:text-white" : "text-foreground group-hover:text-background"
+                  isScrolled ? "text-stone-900 group-hover:text-white" : "text-foreground group-hover:text-background"
                 }`}
               >
                 Add Profile
@@ -132,12 +124,12 @@ export function Header() {
               <span className="w-8 h-8 rounded-full flex items-center justify-center relative z-10">
                 <ArrowRight
                   className={`w-4 h-4 group-hover:opacity-0 absolute transition-opacity duration-300 ${
-                    isScrolled ? "text-black" : "text-foreground"
+                    isScrolled ? "text-stone-900" : "text-foreground"
                   }`}
                 />
                 <ArrowUpRight
                   className={`w-4 h-4 opacity-0 group-hover:opacity-100 transition-all duration-300 ${
-                    isScrolled ? "text-black group-hover:text-white" : "text-foreground group-hover:text-background"
+                    isScrolled ? "text-stone-900 group-hover:text-white" : "text-foreground group-hover:text-background"
                   }`}
                 />
               </span>
@@ -145,7 +137,7 @@ export function Header() {
           </div>
 
           <button
-            className={`md:hidden transition-colors duration-300 ${isScrolled ? "text-black" : "text-foreground"}`}
+            className={`md:hidden transition-colors duration-300 ${isScrolled ? "text-stone-900" : "text-foreground"}`}
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -155,14 +147,14 @@ export function Header() {
         {isOpen && (
           <nav
             className={`md:hidden mt-6 pb-6 flex flex-col gap-4 border-t pt-6 ${
-              isScrolled ? "border-zinc-200" : "border-border"
+              isScrolled ? "border-amber-200/50" : "border-border"
             }`}
           >
             <a
               href="#how-it-works"
               onClick={(e) => handleSmoothScroll(e, "how-it-works")}
               className={`transition-colors cursor-pointer ${
-                isScrolled ? "text-zinc-600 hover:text-black" : "text-muted-foreground hover:text-foreground"
+                isScrolled ? "text-stone-600 hover:text-stone-900" : "text-muted-foreground hover:text-foreground"
               }`}
             >
               Mission
@@ -171,7 +163,7 @@ export function Header() {
               href="#features"
               onClick={(e) => handleSmoothScroll(e, "features")}
               className={`transition-colors cursor-pointer ${
-                isScrolled ? "text-zinc-600 hover:text-black" : "text-muted-foreground hover:text-foreground"
+                isScrolled ? "text-stone-600 hover:text-stone-900" : "text-muted-foreground hover:text-foreground"
               }`}
             >
               Features
@@ -180,7 +172,7 @@ export function Header() {
               href="#pricing"
               onClick={(e) => handleSmoothScroll(e, "pricing")}
               className={`transition-colors cursor-pointer ${
-                isScrolled ? "text-zinc-600 hover:text-black" : "text-muted-foreground hover:text-foreground"
+                isScrolled ? "text-stone-600 hover:text-stone-900" : "text-muted-foreground hover:text-foreground"
               }`}
             >
               Profiles
@@ -189,7 +181,7 @@ export function Header() {
               href="#testimonials"
               onClick={(e) => handleSmoothScroll(e, "testimonials")}
               className={`transition-colors cursor-pointer ${
-                isScrolled ? "text-zinc-600 hover:text-black" : "text-muted-foreground hover:text-foreground"
+                isScrolled ? "text-stone-600 hover:text-stone-900" : "text-muted-foreground hover:text-foreground"
               }`}
             >
               Stories
@@ -198,31 +190,31 @@ export function Header() {
               href="#faq"
               onClick={(e) => handleSmoothScroll(e, "faq")}
               className={`transition-colors cursor-pointer ${
-                isScrolled ? "text-zinc-600 hover:text-black" : "text-muted-foreground hover:text-foreground"
+                isScrolled ? "text-stone-600 hover:text-stone-900" : "text-muted-foreground hover:text-foreground"
               }`}
             >
               FAQ
             </a>
             <div
-              className={`flex flex-col gap-3 mt-4 pt-4 border-t ${isScrolled ? "border-zinc-200" : "border-border"}`}
+              className={`flex flex-col gap-3 mt-4 pt-4 border-t ${isScrolled ? "border-amber-200/50" : "border-border"}`}
             >
-              <Link href="/login" className={isScrolled ? "text-black" : "text-foreground"}>
+              <Link href="/login" className={isScrolled ? "text-stone-900" : "text-foreground"}>
                 Login
               </Link>
               <Link
                 href="/login"
                 className={`relative flex items-center gap-0 border rounded-full pl-5 pr-1 py-1 w-fit transition-all duration-300 group overflow-hidden ${
-                  isScrolled ? "border-zinc-300" : "border-border"
+                  isScrolled ? "border-stone-300" : "border-border"
                 }`}
               >
                 <span
                   className={`absolute inset-0 rounded-full scale-x-0 origin-right group-hover:scale-x-100 transition-transform duration-300 ${
-                    isScrolled ? "bg-black" : "bg-foreground"
+                    isScrolled ? "bg-stone-900" : "bg-foreground"
                   }`}
                 />
                 <span
                   className={`text-sm pr-3 relative z-10 transition-colors duration-300 ${
-                    isScrolled ? "text-black group-hover:text-white" : "text-foreground group-hover:text-background"
+                    isScrolled ? "text-stone-900 group-hover:text-white" : "text-foreground group-hover:text-background"
                   }`}
                 >
                   Add Profile
@@ -230,12 +222,12 @@ export function Header() {
                 <span className="w-8 h-8 rounded-full flex items-center justify-center relative z-10">
                   <ArrowRight
                     className={`w-4 h-4 group-hover:opacity-0 absolute transition-opacity duration-300 ${
-                      isScrolled ? "text-black" : "text-foreground"
+                      isScrolled ? "text-stone-900" : "text-foreground"
                     }`}
                   />
                   <ArrowUpRight
                     className={`w-4 h-4 opacity-0 group-hover:opacity-100 transition-all duration-300 ${
-                      isScrolled ? "text-black group-hover:text-white" : "text-foreground group-hover:text-background"
+                      isScrolled ? "text-stone-900 group-hover:text-white" : "text-foreground group-hover:text-background"
                   }`}
                 />
               </span>

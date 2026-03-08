@@ -8,7 +8,7 @@ const testimonials = [
     name: "Marie Dupont",
     role: "Grandmother",
     content: "I can easily remember the names of all my grandchildren now. The app is so intuitive!",
-    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80",
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80",
   },
   {
     name: "Thomas Martin",
@@ -20,7 +20,7 @@ const testimonials = [
     name: "Sophie Bernard",
     role: "Daughter",
     content: "The facial recognition is incredibly fast and accurate. I recommend it 100%!",
-    avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&q=80",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80",
   },
 ]
 
@@ -33,9 +33,9 @@ const testimonials2 = [
   },
   {
     name: "Emma Laurent",
-    role: "Son",
+    role: "Daughter",
     content: "I added my whole family tree in hours. Incredible platform!",
-    avatar: "https://images.unsplash.com/photo-1601288496920-b6154fe3626a?w=100&q=80",
+    avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&q=80",
   },
   {
     name: "Antoine Rousseau",

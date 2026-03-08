@@ -80,7 +80,7 @@ export function ServicesSection() {
   return (
     <section id="how-it-works" className="py-32 px-6 pb-24 relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 flex justify-center pointer-events-none z-0">
-        <span className="font-bold text-center text-[18vw] sm:text-[16vw] md:text-[14vw] lg:text-[12vw] leading-none tracking-tighter text-zinc-100 whitespace-nowrap">
+        <span className="font-bold text-center text-[18vw] sm:text-[16vw] md:text-[14vw] lg:text-[12vw] leading-none tracking-tighter text-amber-50 whitespace-nowrap">
           FEATURES
         </span>
       </div>
@@ -110,7 +110,7 @@ export function ServicesSection() {
           {/* Background image that spans full width */}
           <div className="absolute inset-0 w-full h-full">
             <img
-              src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1200&q=80"
+              src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=80"
               alt="Beautiful memory"
               className={`w-full h-full object-cover transition-transform duration-1000 ease-out ${
                 isVisible ? "scale-100" : "scale-110"
@@ -151,7 +151,7 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group p-8 rounded-3xl hover:bg-zinc-50 transition-colors duration-300 text-center"
+              className="group p-8 rounded-3xl hover:bg-amber-50/40 transition-colors duration-300 text-center"
             >
               <div className="mb-6 flex justify-center">
                 <AnimatedIcon Icon={service.icon} delay={index * 0.2} />

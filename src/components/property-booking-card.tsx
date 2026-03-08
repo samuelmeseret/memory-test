@@ -85,7 +85,7 @@ export function PropertyBookingCard({
             <div className="mb-2 text-sm font-semibold text-slate-900">Profile Highlights</div>
             <div className="flex flex-wrap gap-2">
               {features.slice(0, 3).map((feature, index) => (
-                <span key={index} className="rounded-lg bg-emerald-50 px-2 py-1 text-xs font-medium text-emerald-700">
+                <span key={index} className="rounded-lg bg-amber-50 px-2 py-1 text-xs font-medium text-amber-800">
                   {feature}
                 </span>
               ))}

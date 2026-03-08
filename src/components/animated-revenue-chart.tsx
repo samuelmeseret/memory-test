@@ -6,10 +6,10 @@ import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts"
 import { TrendingUp, Home, Key, Calendar, Shield } from "lucide-react"
 
 const revenueCategories = [
-  { name: "Immediate Family", icon: Calendar, color: "#3b82f6" },
-  { name: "Extended Family", icon: Key, color: "#10b981" },
-  { name: "Friends", icon: Home, color: "#8b5cf6" },
-  { name: "Acquaintances", icon: Shield, color: "#f59e0b" },
+  { name: "Immediate Family", icon: Calendar, color: "#b45309" },
+  { name: "Extended Family", icon: Key, color: "#0f766e" },
+  { name: "Friends", icon: Home, color: "#c2410c" },
+  { name: "Acquaintances", icon: Shield, color: "#854d0e" },
 ]
 
 const initialRevenueData = [

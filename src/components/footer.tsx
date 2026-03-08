@@ -33,7 +33,7 @@ export function Footer() {
   return (
     <div className="relative">
       <div className="absolute -top-[20vw] left-0 right-0 w-full h-[50vw] z-0 overflow-hidden">
-        <Image src="https://images.unsplash.com/photo-1517594422361-5e18a412072f?w=1600&q=80" alt="Family background" fill className="object-cover" priority />
+        <Image src="https://images.unsplash.com/photo-1542909168-180c6fde6e3d?w=1600&q=80" alt="Family background" fill className="object-cover" priority />
       </div>
 
       <div className="absolute -top-[15vw] left-0 right-0 flex items-end justify-center overflow-visible pointer-events-none z-10">
@@ -47,16 +47,7 @@ export function Footer() {
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
             <div className="col-span-2 md:col-span-1">
               <Link href="/" className="flex items-center gap-2 mb-4">
-                <svg
-                  className="w-5 h-5 text-foreground"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                  <polyline points="9 22 9 12 15 12 15 22" />
-                </svg>
+                <Image src="/Logo.ico" alt="Memory Lane" width={24} height={24} />
                 <span className="text-base font-medium text-foreground">Memory Lane</span>
               </Link>
               <p className="text-sm text-muted-foreground mb-6">Remember your loved ones, simplified.</p>
